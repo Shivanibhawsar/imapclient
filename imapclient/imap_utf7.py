@@ -100,7 +100,7 @@ def decode(s):
 
 
 def base64_utf7_encode(buffer):
-    s = "".join(buffer).encode("utf-16be")
+    s = "".join(buffer).encode("utf-8")
     return binascii.b2a_base64(s).rstrip(b"\n=").replace(b"/", b",")
 
 
