@@ -106,4 +106,4 @@ def base64_utf7_encode(buffer):
 
 def base64_utf7_decode(s):
     s_utf7 = b"+" + s.replace(b",", b"/") + b"-"
-    return s_utf7.decode("utf-7")
+    return s_utf7.decode("utf-8")
